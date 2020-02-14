@@ -94,8 +94,22 @@ class ATCClassicLoginScreenViewController: UIViewController {
     @objc func didTapBackButton() {
         self.navigationController?.popViewController(animated: true)
     }
-
+    
     @objc func didTapLoginButton() {
+        let loginManager = FirebaseAuthManager()
+        guard let email = contactPointTextField.text, let password = passwordTextField.text else { return }
+        loginManager.signIn(email: email, pass: password) {[weak self] (success) in
+            guard let `self` = self else { return }
+            var message: String = ""
+            if (success) {
+                message = "User was sucessfully logged in."
+            } else {
+                message = "There was an error."
+            }
+            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.display(alertController: alertController)
+        }
     }
 
     @objc func didTapFacebookButton() {

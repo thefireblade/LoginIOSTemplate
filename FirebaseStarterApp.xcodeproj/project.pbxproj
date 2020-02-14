@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		1773BFF2221FAE14005C82D8 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773BFF1221FAE14005C82D8 /* UIImage.swift */; };
 		1773BFF4221FB4D8005C82D8 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773BFF3221FB4D8005C82D8 /* UITextField.swift */; };
 		3E398CD0763F03111BF118C5 /* Pods_FirebaseStarterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651F14D5CB6E681D3D70507 /* Pods_FirebaseStarterApp.framework */; };
+		A82BAAD323F73575001EEFC0 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BAAD223F73575001EEFC0 /* FBManager.swift */; };
+		A82BAAD523F73653001EEFC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82BAAD423F73653001EEFC0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		1773BFF3221FB4D8005C82D8 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		5651F14D5CB6E681D3D70507 /* Pods_FirebaseStarterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseStarterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F562D2664D895A5CDEF3A83 /* Pods-FirebaseStarterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseStarterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseStarterApp/Pods-FirebaseStarterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A82BAAD223F73575001EEFC0 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		A82BAAD423F73653001EEFC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C65F32946A0E14A8914D92CE /* Pods-FirebaseStarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseStarterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseStarterApp/Pods-FirebaseStarterApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,8 @@
 		1773BFC8221FA51C005C82D8 /* FirebaseStarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				A82BAAD423F73653001EEFC0 /* GoogleService-Info.plist */,
+				A82BAAD123F7354A001EEFC0 /* FirebaseManager */,
 				1773BFE8221FA83A005C82D8 /* Controls */,
 				1773BFDB221FA7D0005C82D8 /* ViewControllers */,
 				1773BFC9221FA51C005C82D8 /* AppDelegate.swift */,
@@ -123,6 +129,14 @@
 				5651F14D5CB6E681D3D70507 /* Pods_FirebaseStarterApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A82BAAD123F7354A001EEFC0 /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A82BAAD223F73575001EEFC0 /* FBManager.swift */,
+			);
+			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
 		CBC48E8D33775F503B18D956 /* Pods */ = {
@@ -199,6 +213,7 @@
 				1773BFD1221FA51F005C82D8 /* Assets.xcassets in Resources */,
 				1773BFE2221FA7D1005C82D8 /* ATCClassicSignUpViewController.xib in Resources */,
 				1773BFE7221FA7D1005C82D8 /* ATCClassicLoginScreenViewController.xib in Resources */,
+				A82BAAD523F73653001EEFC0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +272,7 @@
 				1773BFF2221FAE14005C82D8 /* UIImage.swift in Sources */,
 				1773BFE3221FA7D1005C82D8 /* ATCClassicSignUpViewController.swift in Sources */,
 				1773BFEA221FA854005C82D8 /* ATCTextField.swift in Sources */,
+				A82BAAD323F73575001EEFC0 /* FBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
